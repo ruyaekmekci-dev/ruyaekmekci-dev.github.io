@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruya Ekmekci | Personal Website</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f7fb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f172a, #334155);
+      color: white;
+      padding: 22px 0;
+    }
+
+    .nav {
+      width: min(1000px, 90%);
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      width: min(1000px, 90%);
+      margin: 45px auto 25px;
+      background: white;
+      border-radius: 18px;
+      padding: 45px;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      font-size: 38px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: #475569;
+      font-size: 17px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: #e2e8f0;
+      color: #334155;
+      padding: 7px 12px;
+      border-radius: 999px;
+      margin: 5px 7px 0 0;
+      font-size: 13px;
+    }
+
+    main {
+      width: min(1000px, 90%);
+      margin: auto;
+    }
+
+    section {
+      margin: 28px 0;
+    }
+
+    section h2 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #cbd5e1;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 6px;
+      color: #0f172a;
+    }
+
+    .date {
+      color: #64748b;
+      font-size: 14px;
+      margin-top: 0;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: white;
+      border: 1px solid #dbe2ea;
+      padding: 10px 14px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+    }
+
+    .contact p {
+      margin: 8px 0;
+    }
+
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      color: #64748b;
+      padding: 35px 15px 45px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 28px;
+      }
+
+      .hero h2 {
+        font-size: 30px;
+      }
+
+      .nav-links a {
+        margin-left: 0;
+        margin-right: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="nav">
+      <h1>Ruya Ekmekci</h1>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h2>Hello, I'm Ruya.</h2>
+    <p>
+      I am a University of Miami student interested in business, technology,
+      digital marketing, and entrepreneurship. I enjoy learning how technology
+      can be used creatively to solve problems and improve communication.
+    </p>
+
+    <span class="tag">Technology</span>
+    <span class="tag">Business</span>
+    <span class="tag">Digital Marketing</span>
+    <span class="tag">Entrepreneurship</span>
+  </section>
+
+  <main>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am currently studying at the University of Miami and building my
+          experience across business and technology. I am especially interested
+          in digital marketing, entrepreneurship, and using technology to create
+          better experiences for people and organizations.
+        </p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="grid">
+        <div class="card">
+          <h3>Digital Marketing Intern — ColendiBank</h3>
+          <p class="date">May 2026 – July 2026</p>
+          <p>
+            Supported digital marketing projects and worked on social media,
+            content, and digital communication concepts for a technology-focused
+            banking company.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Personal Website Project — Computer Science</h3>
+          <p class="date">2026</p>
+          <p>
+            Created and published a personal website using HTML, CSS, GitHub,
+            and GitHub Pages. This project helped me learn how websites are built,
+            stored, and published online.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Microsoft Excel</div>
+        <div class="skill">Digital Marketing</div>
+        <div class="skill">Communication</div>
+        <div class="skill">Teamwork</div>
+      </div>
+    </section>
+
+    <section id="interests">
+      <h2>Interests</h2>
+      <div class="card">
+        <p>
+          My interests include technology, business, digital marketing,
+          entrepreneurship, social media strategy, and learning new digital tools.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p><strong>Email:</strong> Add your email here</p>
+        <p><strong>LinkedIn:</strong> Add your LinkedIn link here</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Ruya Ekmekci
+  </footer>
+
+</body>
+</html>
